@@ -1,0 +1,200 @@
+.top-panel
+  padding-top 15px
+  padding-bottom 15px
+
+  @media (min-width: 375px)
+    padding-top 30px
+    padding-bottom 30px
+
+  @media (min-width: 641px)
+    padding-top 50px
+    padding-bottom 50px
+
+  @media (min-width: 1025px)
+    padding-top 20px
+    padding-bottom 20px
+
+  @media (min-width: 1360px)
+    padding-top 30px
+    padding-bottom 30px
+
+  &__inner
+    display flex
+    align-items center
+
+    @media (min-width: 1280px)
+      justify-content space-between
+  
+  &__button-burger
+    display flex
+    flex-direction: column
+    gap 5px
+    flex 0 0 35px
+    width 35px
+    max-width: 35px
+    background-color transparent
+    position relative
+    margin-right 17px
+    border none
+    padding 0
+    position: relative
+    cursor pointer
+    z-index: 101;
+
+    @media (min-width: 641px)
+      margin-right 44px
+
+    @media (min-width: 1280px)
+      display none
+    
+    &._is-active
+
+      &:before
+        top: calc(5px + 3px)
+        transform: rotate(45deg)
+        transition: top .2s, transform .2s .1s
+      
+      span
+        transform: scaleX(0)
+
+      &:after
+        bottom: calc(5px + 3px)
+        transform: rotate(-45deg)
+        transition: bottom .2s, transform .2s .1s
+
+    &:before, &:after  
+      content: ''
+
+    &:before, span, &:after 
+      width 100%
+      height: 3px
+      border-radius: 32px
+      background-color: #fff
+      position relative
+    
+    &:before
+      top: 0
+      transform: rotate(0)
+      transition: top .2s .1s, transform .1s
+
+    span
+      transform: scaleX(1)
+      transition: transform .15s .1s
+
+    &:after
+      bottom: 0
+      transform: rotate(0)
+      transition: bottom .2s .1s, transform .1s
+  
+  &__menu
+    display none
+
+    @media (min-width: 1280px)
+      display block
+  
+  &__button-demo
+    color: #fff
+    font-size 10px
+    width 90px
+    padding 8px 10px 8px 10px
+    min-width: auto
+    border-color #fff
+    white-space: nowrap
+    margin-left auto
+
+    @media (min-width: 375px)
+      font-size: 14px
+      padding 12px 16px 12px 20px
+      width 135px
+
+    @media (min-width: 641px)
+      width auto
+      padding 17px
+      min-width: 240px
+    
+    @media (min-width: 1280px)
+      margin-left 0
+
+    span
+      display: block
+      overflow: hidden
+
+      @media (min-width: 641px)
+        overflow visible
+        white-space: normal
+
+   
+.mobile-menu
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100vh
+  background-color: rgba(255, 255, 255, 0.20)
+  backdrop-filter: blur(10px)
+  opacity 0
+  visibility hidden
+  transition: opacity .3s, ease .3s
+  z-index 100
+
+  @media (min-width: 1280px)
+    display none
+
+  &._is-show
+    opacity 1
+    visibility visible
+
+    .mobile-menu
+      &__container
+        transform: translateX(0)
+
+  &__container
+    width 375px
+    height 100%
+    padding-top: 60px
+    background-image: linear-gradient(-59deg, #53bcf0 0%, #398bcb 100%)
+    box-shadow: -10px 4px 30px 0px rgba(0, 0, 0, 0.25)
+    transform: translateX(-100%)
+    transition: transform .3s, ease .3s
+
+    @media (min-width: 375px)
+      padding-top: 90px
+
+    @media (min-width: 641px)
+      padding-top: 140px
+    
+    @media (min-width: 1025px)
+      padding-top 85px
+  
+  &__menu
+    overflow-y auto
+    overflow-x: hidden
+    width 100%
+    max-width: 100%
+    height 100%
+    padding-top 9px
+    padding-bottom 30px
+
+    .main-menu, .additional-menu
+      padding 15px
+
+      @media (min-width: 1025px)
+        padding 40px
+
+      &__nav
+        ul
+          display block
+
+          li
+            margin-right 0
+            margin-bottom 15px
+
+            &:last-child
+              margin-bottom 0
+
+            a
+              font-size 16px
+              padding 0
+    
+    .main-menu
+      background-color: rgba(255, 255, 255, 0.17)

@@ -7,6 +7,36 @@ html,
 body
   min-height 100vh
 
+html
+  &._is-show-mobile-menu
+    overflow: hidden
+
 .app
   display grid
   grid-template-rows: auto 1fr auto
+
+.container
+  max-width: 1600px + 15px + 15px
+  width 100%
+  padding-right 15px
+  padding-left 15px
+  margin 0 auto
+
+  @media (min-width: 1025px)
+    max-width: 1600px + 40px + 40px
+    padding-right 40px
+    padding-left 40px
+
+.button-default
+  color: #000000
+  font-size: 18px
+  font-weight: 400
+  line-height: 1
+  text-align: center
+  text-decoration none
+  background-color transparent
+  min-width: 300px
+  padding 22px
+  border-radius: 50px
+  border: 2px solid #53bcf0
+  cursor pointer

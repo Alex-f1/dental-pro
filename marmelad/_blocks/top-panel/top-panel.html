@@ -1,0 +1,24 @@
+<div block="top-panel">
+  <div elem="container" class="container">
+    <div elem="inner">
+      <button elem="button-burger" class="js-button-burger" type="button">
+        <span></span>
+      </button>
+      <div block="mobile-menu" class="js-mobile-menu">
+        <div elem="container">
+          <div elem="menu">
+            {% include "main-menu.html" %}
+            {% include "additional-menu.html" %}
+          </div>
+        </div>
+      </div>
+      {% include "logo.html" %}
+      <div elem="menu">
+        {% include "additional-menu.html" %}
+      </div>
+      <a elem="button-demo" class="button-default" href="#">
+        <span>Демо-версия на 14 дней</span>
+      </a>
+    </div>
+  </div>
+</div><!-- top-panel -->
