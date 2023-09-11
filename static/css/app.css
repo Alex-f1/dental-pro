@@ -911,17 +911,17 @@ html._is-show-mobile-menu {
 .top-panel__menu {
   display: none;
 }
-.top-panel__button-demo {
+.top-panel__button-demo.button-default {
   color: #fff;
   font-size: 10px;
   width: 90px;
-  padding: 8px 10px 8px 10px;
+  padding: 6px 10px 8px 12px;
   min-width: auto;
   border-color: #fff;
   white-space: nowrap;
   margin-left: auto;
 }
-.top-panel__button-demo span {
+.top-panel__button-demo.button-default span {
   display: block;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
@@ -1024,9 +1024,9 @@ html._is-show-mobile-menu {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .top-panel__button-demo {
+  .top-panel__button-demo.button-default {
     font-size: 14px;
-    padding: 12px 16px 12px 20px;
+    padding: 12px 18px 12px 24px;
     width: 135px;
   }
   .mobile-menu__container {
@@ -1189,12 +1189,12 @@ html._is-show-mobile-menu {
   .top-panel__button-burger {
     margin-right: 44px;
   }
-  .top-panel__button-demo {
+  .top-panel__button-demo.button-default {
     width: auto;
-    padding: 17px;
-    min-width: 240px;
+    padding: 16px;
+    min-width: 230px;
   }
-  .top-panel__button-demo span {
+  .top-panel__button-demo.button-default span {
     overflow: visible;
     white-space: normal;
   }
@@ -1400,6 +1400,9 @@ html._is-show-mobile-menu {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .top-panel__button-demo.button-default {
+    min-width: 210px;
+  }
   .mobile-menu__container {
     padding-top: 85px;
   }
@@ -1516,7 +1519,7 @@ html._is-show-mobile-menu {
   .top-panel__menu {
     display: block;
   }
-  .top-panel__button-demo {
+  .top-panel__button-demo.button-default {
     margin-left: 0;
   }
   .mobile-menu {
@@ -1641,6 +1644,9 @@ html._is-show-mobile-menu {
   .top-panel {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+  .top-panel__button-demo.button-default {
+    min-width: 240px;
   }
 }
 @media (min-width: 1900px) {

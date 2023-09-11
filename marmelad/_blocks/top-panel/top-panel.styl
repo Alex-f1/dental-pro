@@ -92,11 +92,11 @@
     @media (min-width: 1280px)
       display block
   
-  &__button-demo
+  &__button-demo.button-default
     color: #fff
     font-size 10px
     width 90px
-    padding 8px 10px 8px 10px
+    padding 6px 10px 8px 12px
     min-width: auto
     border-color #fff
     white-space: nowrap
@@ -104,16 +104,22 @@
 
     @media (min-width: 375px)
       font-size: 14px
-      padding 12px 16px 12px 20px
+      padding 12px 18px 12px 24px
       width 135px
 
     @media (min-width: 641px)
       width auto
-      padding 17px
-      min-width: 240px
+      padding 16px
+      min-width: 230px
     
+    @media (min-width: 1025px)
+      min-width: 210px
+
     @media (min-width: 1280px)
       margin-left 0
+    
+    @media (min-width: 1360px)
+      min-width: 240px
 
     span
       display: block
