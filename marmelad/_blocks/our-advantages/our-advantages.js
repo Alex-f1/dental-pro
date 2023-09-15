@@ -1,13 +1,7 @@
 function ourAdvantagesSliderInit() {
   const ourAdvantagesSlider = new Swiper(".js-our-advantages-slider", {
     slidesPerView: "auto",
-    // initialSlide: 3,
     spaceBetween: 47,
-    // centeredSlides: true,
-    scrollbar: {
-      el: ".swiper-scrollbar",
-      hide: false,
-    },
     breakpoints: {
       // when window width is >= 320px
       320: {

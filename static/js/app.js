@@ -30,13 +30,7 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 function ourAdvantagesSliderInit() {
   const ourAdvantagesSlider = new Swiper(".js-our-advantages-slider", {
     slidesPerView: "auto",
-    // initialSlide: 3,
     spaceBetween: 47,
-    // centeredSlides: true,
-    scrollbar: {
-      el: ".swiper-scrollbar",
-      hide: false
-    },
     breakpoints: {
       // when window width is >= 320px
       320: {
@@ -58,6 +52,33 @@ function ourAdvantagesSliderInit() {
 
 if (document.querySelectorAll(".js-our-advantages-slider").length) {
   ourAdvantagesSliderInit();
+}
+
+function reviewsCustomerSliderInit() {
+  const reviewsCustomerSlider = new Swiper(".js-reviews-customer-slider", {
+    slidesPerView: "auto",
+    spaceBetween: 50,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        spaceBetween: 15,
+        freeMode: true
+      },
+      // when window width is >= 641px
+      641: {
+        spaceBetween: 40
+      },
+      // when window width is >= 1281px
+      1281: {
+        spaceBetween: 50,
+        freeMode: false
+      }
+    }
+  });
+}
+
+if (document.querySelectorAll(".js-reviews-customer-slider").length) {
+  reviewsCustomerSliderInit();
 }
 
 function servicesSliderInit() {
