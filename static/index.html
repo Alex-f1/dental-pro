@@ -72,11 +72,11 @@
             <div class="additional-menu">
   <nav class="additional-menu__nav">
     <ul>
-      <li><a href="#">Возможности</a></li>
-      <li><a href="#">Кому подходит</a></li>
-      <li><a href="#">Сравнение</a></li>
-      <li><a href="#">Тарифы</a></li>
-      <li><a href="#">Блог</a></li>
+      <li><a href="#features">Возможности</a></li>
+      <li><a href="#for_whom">Кому подходит</a></li>
+      <li><a href="#our_advantages">Сравнение</a></li>
+      <li><a href="#tariffs">Тарифы</a></li>
+      <!-- <li><a href="#">Блог</a></li> -->
     </ul>
   </nav>
 </div><!-- additional-menu -->
@@ -93,17 +93,17 @@
         <div class="additional-menu">
   <nav class="additional-menu__nav">
     <ul>
-      <li><a href="#">Возможности</a></li>
-      <li><a href="#">Кому подходит</a></li>
-      <li><a href="#">Сравнение</a></li>
-      <li><a href="#">Тарифы</a></li>
-      <li><a href="#">Блог</a></li>
+      <li><a href="#features">Возможности</a></li>
+      <li><a href="#for_whom">Кому подходит</a></li>
+      <li><a href="#our_advantages">Сравнение</a></li>
+      <li><a href="#tariffs">Тарифы</a></li>
+      <!-- <li><a href="#">Блог</a></li> -->
     </ul>
   </nav>
 </div><!-- additional-menu -->
 
       </div>
-      <a class="top-panel__button-demo button-default" href="#">
+      <a class="top-panel__button-demo button-default" data-hystmodal="#consultation" href="#">
         <span>Демо-версия на 14 дней</span>
       </a>
     </div>
@@ -321,7 +321,7 @@
         </div>
       </div>
     </div><!-- projects -->
-    <div class="for-whom">
+    <div id="for_whom" class="for-whom">
       <div class="for-whom__container">
         <div class="for-whom__head">
           <h2 class="for-whom__title wow slideInLeft" data-wow-duration="1s">Кому подходит</h2>
@@ -373,7 +373,7 @@
   </div>
 </div><!-- info-block -->
 	
-	<div class="features">
+	<div id="features" class="features">
   <div class="features__container container">
     <div class="features__inner">
       <div class="features__head">
@@ -595,7 +595,7 @@
       </div>
       <div class="features__bottom wow fadeInUp" data-wow-duration="1s">
         <strong>Заказать демонстрацию возможностей</strong>
-        <a class="features__button-get button-default button-default--fill" href="#">
+        <a class="features__button-get button-default button-default--fill" data-hystmodal="#consultation" href="#">
           <span>Получить бесплатно</span>
         </a>
       </div>
@@ -608,7 +608,7 @@
   </div>
 </div><!-- features -->
 
-	<div class="our-advantages">
+	<div id="our_advantages" class="our-advantages">
   <div class="our-advantages__container container">
     <div class="our-advantages__head">
       <h2 class="our-advantages__title wow slideInLeft" data-wow-duration="1s">
@@ -734,7 +734,7 @@
               </div>
               <div class="reviews-customer__place">Отзыв клиники доктора Кардаковой</div>
             </div>
-            <a href="#" class="reviews-customer__review">
+            <a class="reviews-customer__review js-reviews-customer" data-src="https://www.youtube.com/embed/bm4j9YX3oOQ?si=Var7Y1KtHKa7NcB9" data-hystmodal="#video" href="#">
               <i class="reviews-customer__icon"><img src="img/review-icon.svg" alt=""></i>
               <div class="reviews-customer__img"><img src="img/reviews-customer-pic.jpg" alt=""></div>
             </a>
@@ -755,7 +755,7 @@
               </div>
               <div class="reviews-customer__place">Отзыв клиники «АСМEDИКА»</div>
             </div>
-            <a href="#" class="reviews-customer__review">
+            <a class="reviews-customer__review js-reviews-customer" data-src="https://www.youtube.com/embed/bm4j9YX3oOQ?si=Var7Y1KtHKa7NcB9" data-hystmodal="#video" href="#">
               <i class="reviews-customer__icon"><img src="img/review-icon.svg" alt=""></i>
               <div class="reviews-customer__img"><img src="img/reviews-customer-pic2.jpg" alt=""></div>
             </a>
@@ -775,7 +775,7 @@
               </div>
               <div class="reviews-customer__place">Отзыв клиники доктора Кардаковой</div>
             </div> 
-            <a href="#" class="reviews-customer__review">
+            <a class="reviews-customer__review js-reviews-customer" data-src="https://www.youtube.com/embed/bm4j9YX3oOQ?si=Var7Y1KtHKa7NcB9" data-hystmodal="#video" href="#">
               <i class="reviews-customer__icon"><img src="img/review-icon.svg" alt=""></i>
               <div class="reviews-customer__img"><img src="img/reviews-customer-pic.jpg" alt=""></div>
             </a>
@@ -879,7 +879,7 @@
   </div>
 </div><!-- about-mobile-app -->
 	
-	<div class="tariffs">
+	<div id="tariffs" class="tariffs">
   <div class="tariffs__container container">
     <h2 class="tariffs__title wow slideInDown" data-wow-duration="1s">Выберите нужную версию</h2>
     <div class="tariffs__items wow fadeInUp" data-wow-duration="1s">
@@ -890,7 +890,7 @@
           </div>
           <div class="tariffs__name">DentalPRO Lite</div>
           <div class="tariffs__price">от 7990 ₽ в мес</div>
-          <a class="tariffs__button-try button-default button-default--fill" href="#">
+          <a class="tariffs__button-try button-default button-default--fill" data-hystmodal="#consultation" href="#">
             <span>Попробовать бесплатно</span>
           </a>
         </div>
@@ -902,7 +902,7 @@
           </div>
           <div class="tariffs__name">DentalPRO Cloud</div>
           <div class="tariffs__price">от 8780 ₽ в мес</div>
-          <a class="tariffs__button-try button-default button-default--fill" href="#">
+          <a class="tariffs__button-try button-default button-default--fill" data-hystmodal="#consultation" href="#">
             <span>Попробовать бесплатно</span>
           </a>
         </div>
@@ -914,14 +914,14 @@
           </div>
           <div class="tariffs__name">DentalPRO Server</div>
           <div class="tariffs__price">от 8780 ₽ в мес</div>
-          <a class="tariffs__button-try button-default button-default--fill" href="#">
+          <a class="tariffs__button-try button-default button-default--fill" data-hystmodal="#consultation" href="#">
             <span>Попробовать бесплатно</span>
           </a>
         </div>
       </div>
     </div>
     <div class="tariffs__bottom wow fadeInDown" data-wow-duration="1s">
-      <a class="tariffs__button-compares button-default" href="#">
+      <a class="tariffs__button-compares button-default" data-hystmodal="#consultation" href="#">
         <span>Сравнить тарифы</span>
       </a>
     </div>
@@ -1109,8 +1109,36 @@
 			}
 		</script>
 
-        <script defer="" src="js/plugins.min.js"></script>
-        <script defer="" src="js/app.js"></script>
+			<div class="popup hystmodal" id="video" aria-hidden="true">
+				<div class="popup__container hystmodal__wrap">
+					<div class="popup__inner hystmodal__window" role="dialog" aria-modal="true">
+						<button data-hystclose="" class="popup__button-close hystmodal__close">Close</button>
+						<div class="popup__content">
+							<div class="popup__video">
+								<iframe class="js-video" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- popup -->
+
+			<div class="popup hystmodal" id="consultation" aria-hidden="true">
+				<div class="popup__container hystmodal__wrap">
+					<div class="popup__inner hystmodal__window" role="dialog" aria-modal="true">
+						<button data-hystclose="" class="popup__button-close hystmodal__close">Close</button>
+						<div class="popup__content">
+							<div class="popup__info">
+								<h2>По всем вопросам Вас проконсультируют наши специалисты:</h2>
+								<a href="mailto:sales@dental-pro.online">sales@dental-pro.online</a>
+								<a href="tel:88005339240">8 (800) 533-92-40</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- popup -->
+
+			<script defer="" src="js/plugins.min.js"></script>
+			<script defer="" src="js/app.js"></script>
 
     </body><!-- app -->
 </html>

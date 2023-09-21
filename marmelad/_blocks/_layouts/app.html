@@ -67,8 +67,38 @@
 			}
 		</script>
 
-        <script defer src="js/plugins.min.js"></script>
-        <script defer src="js/app.js"></script>
+			<div block="popup" class="hystmodal" id="video" aria-hidden="true">
+				<div elem="container" class="hystmodal__wrap">
+					<div elem="inner" class="hystmodal__window" role="dialog" aria-modal="true">
+						<button elem="button-close" data-hystclose class="hystmodal__close">Close</button>
+						<div elem="content">
+							<div elem="video">
+								<iframe class="js-video" width="560" height="315" src="" title="YouTube video player" frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- popup -->
+
+			<div block="popup" class="hystmodal" id="consultation" aria-hidden="true">
+				<div elem="container" class="hystmodal__wrap">
+					<div elem="inner" class="hystmodal__window" role="dialog" aria-modal="true">
+						<button elem="button-close" data-hystclose class="hystmodal__close">Close</button>
+						<div elem="content">
+							<div elem="info">
+								<h2>По всем вопросам Вас проконсультируют наши специалисты:</h2>
+								<a href="mailto:sales@dental-pro.online">sales@dental-pro.online</a>
+								<a href="tel:88005339240">8 (800) 533-92-40</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- popup -->
+
+			<script defer src="js/plugins.min.js"></script>
+			<script defer src="js/app.js"></script>
 
     </body><!-- app -->
 </html>

@@ -24,3 +24,13 @@ function reviewsCustomerSliderInit() {
 if (document.querySelectorAll(".js-reviews-customer-slider").length) {
   reviewsCustomerSliderInit();
 }
+
+const reviewsCustomer = document.querySelectorAll(".js-reviews-customer");
+const video = document.querySelector(".js-video");
+
+reviewsCustomer.forEach(function(item) {
+  item.addEventListener("click", function(event) {
+    const getDataSrc = event.currentTarget.dataset.src;
+    video.setAttribute("src", getDataSrc);
+  });
+});

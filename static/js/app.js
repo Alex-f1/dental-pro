@@ -83,6 +83,16 @@ if (document.querySelectorAll(".js-our-advantages-slider").length) {
   ourAdvantagesSliderInit();
 }
 
+const myModal = new HystModal({
+  linkAttributeName: "data-hystmodal",
+  catchFocus: true,
+  waitTransitions: true,
+  closeOnEsc: false,
+  afterClose: function (modal) {
+    document.querySelector(".js-video").setAttribute("src", "");
+  }
+});
+
 function reviewsCustomerSliderInit() {
   const reviewsCustomerSlider = new Swiper(".js-reviews-customer-slider", {
     slidesPerView: "auto",
@@ -109,6 +119,15 @@ function reviewsCustomerSliderInit() {
 if (document.querySelectorAll(".js-reviews-customer-slider").length) {
   reviewsCustomerSliderInit();
 }
+
+const reviewsCustomer = document.querySelectorAll(".js-reviews-customer");
+const video = document.querySelector(".js-video");
+reviewsCustomer.forEach(function (item) {
+  item.addEventListener("click", function (event) {
+    const getDataSrc = event.currentTarget.dataset.src;
+    video.setAttribute("src", getDataSrc);
+  });
+});
 
 function servicesSliderInit() {
   const servicesSlider = new Swiper(".js-services-slider", {
