@@ -27,6 +27,8 @@ if (window.NodeList && !NodeList.prototype.forEach) {
  * ========================================================================== */
 
 
+new WOW().init();
+
 function aboutMobileAppAccordion() {
   const itemInfo = document.querySelectorAll(".js-about-mobile-app-item");
   itemInfo.forEach(function (item) {
@@ -193,4 +195,3 @@ function fixedHeaderPanelPanel() {
 }
 
 fixedHeaderPanelPanel();
-new WOW().init();

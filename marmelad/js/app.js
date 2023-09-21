@@ -24,7 +24,7 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 /* ^^^
  * Scripts
  * ========================================================================== */
-
+new WOW().init();
 //=require ../_blocks/**/*.js
 
 function fixedHeaderPanelPanel() {
@@ -65,6 +65,3 @@ function fixedHeaderPanelPanel() {
 }
 
 fixedHeaderPanelPanel();
-
-
-new WOW().init();
