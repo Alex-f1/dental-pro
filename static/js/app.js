@@ -161,7 +161,7 @@ if (document.querySelectorAll(".js-button-burger").length) {
   mobilePanel();
 }
 
-function fixedPanel() {
+function fixedHeaderPanelPanel() {
   const headerTopPanel = document.querySelector(".js-header-top-panel");
   const topPanel = document.querySelector(".top-panel");
   const topPanelOffsetTop = topPanel.offsetTop;
@@ -192,4 +192,5 @@ function fixedPanel() {
   });
 }
 
-fixedPanel();
+fixedHeaderPanelPanel();
+new WOW().init();

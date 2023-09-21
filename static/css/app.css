@@ -1306,6 +1306,9 @@ html._is-overflow-hidden {
   padding-bottom: 30px;
   overflow: visible;
 }
+.our-advantages__wrapper:not(.swiper-initialized) .our-advantages__item {
+  margin-right: 47px;
+}
 .our-advantages__item {
   width: 260px;
   height: 280px;
@@ -1445,6 +1448,9 @@ html._is-overflow-hidden {
   padding-bottom: 30px;
   overflow: visible;
 }
+.reviews-customer__wrapper:not(.swiper-initialized) .reviews-customer__item {
+  margin-right: 50px;
+}
 .reviews-customer__item {
   width: 280px;
   height: 300px;
@@ -1583,6 +1589,9 @@ html._is-overflow-hidden {
   height: 2px;
   background-color: #fff;
 }
+.services-block__wrapper:not(.swiper-initialized) .services-block__item {
+  margin-right: 30px;
+}
 .services-block__items {
   height: 260px;
   align-items: center;
@@ -1654,7 +1663,7 @@ html._is-overflow-hidden {
 }
 .services-block__more span {
   line-height: 1;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 .tariffs {
   padding-top: 45px;

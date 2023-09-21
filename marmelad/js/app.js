@@ -27,7 +27,7 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 
 //=require ../_blocks/**/*.js
 
-function fixedPanel() {
+function fixedHeaderPanelPanel() {
 
   const headerTopPanel = document.querySelector(".js-header-top-panel");
   const topPanel = document.querySelector(".top-panel");
@@ -64,4 +64,7 @@ function fixedPanel() {
 
 }
 
-fixedPanel();
+fixedHeaderPanelPanel();
+
+
+new WOW().init();
