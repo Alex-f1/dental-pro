@@ -6,13 +6,13 @@ function mobilePanel() {
   buttonBurger.addEventListener("click", function () {
     this.classList.toggle("_is-active");
     mobileMenu.classList.toggle("_is-show");
-    html.classList.toggle("_is-show-mobile-menu");
+    html.classList.toggle("_is-overflow-hidden");
   });
 
   mobileMenu.addEventListener("click", function () {
     buttonBurger.classList.remove("_is-active");
     mobileMenu.classList.remove("_is-show");
-    html.classList.remove("_is-show-mobile-menu");
+    html.classList.remove("_is-overflow-hidden");
   });
 }
 

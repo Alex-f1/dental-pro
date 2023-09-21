@@ -3,7 +3,7 @@
     <div elem="inner">
       <div elem="content">
         <h1>
-          УПРАВЛЕНИЕ
+          УПРАВЛЕНИЕ <br>
           СТОМАТОЛОГИЕЙ
         </h1>
         <div elem="desc">
@@ -14,9 +14,23 @@
         </div>
       </div>
       {% include "services-block.html" %}
-      <a elem="online-chat" href="#">
-        <img src="img/online-chat-icon.svg" alt="">
-      </a>
+      <div class="online-chat-overlay"></div>
+      <div block="online-chat" class="js-online-chat">
+        <div elem="social-links">
+          <a elem="social-link" href="#">
+            <img src="img/social-link-icon.png" alt="">
+          </a>
+          <a elem="social-link" href="#">
+            <img src="img/social-link-icon2.png" alt="">
+          </a>
+          <a elem="social-link" href="#">
+            <img src="img/social-link-icon3.png" alt="">
+          </a>
+        </div>
+        <i>
+          <img src="img/online-chat-icon.svg" alt="">
+        </i>
+      </div>
     </div>
   </div>
   <div elem="pic">

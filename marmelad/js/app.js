@@ -26,3 +26,42 @@ if (window.NodeList && !NodeList.prototype.forEach) {
  * ========================================================================== */
 
 //=require ../_blocks/**/*.js
+
+function fixedPanel() {
+
+  const headerTopPanel = document.querySelector(".js-header-top-panel");
+  const topPanel = document.querySelector(".top-panel");
+  const topPanelOffsetTop = topPanel.offsetTop;
+
+  window.addEventListener("scroll", function() {
+
+    if (window.scrollY > topPanelOffsetTop) {
+      headerTopPanel.classList.add("_is-fixed");
+      
+    } else {
+      headerTopPanel.classList.remove("_is-fixed");
+      headerTopPanel.style.top = 0;
+    }
+
+    let oldScroll = this.oldScroll || 0;
+    let newScroll = this.scrollY;
+
+    if (newScroll < oldScroll) {
+      headerTopPanel.style.top = 0;
+    }
+
+    this.oldScroll = newScroll;
+
+    if (newScroll >= oldScroll) {
+      headerTopPanel.style.top = `${-topPanelOffsetTop}px`;
+    }
+
+    if (newScroll == 0) {
+      headerTopPanel.classList.remove("_is-fixed");
+    }
+
+  });
+
+}
+
+fixedPanel();

@@ -40,6 +40,20 @@ if (document.querySelectorAll(".js-about-mobile-app-item").length) {
   aboutMobileAppAccordion();
 }
 
+const onlineChatButton = document.querySelector(".js-online-chat");
+const onlineChatOverlay = document.querySelector(".online-chat-overlay");
+const html = document.querySelector("html");
+onlineChatButton.addEventListener("click", function (event) {
+  event.currentTarget.classList.add("_is-active");
+  onlineChatOverlay.classList.add("_is-opened");
+  html.classList.toggle("_is-overflow-hidden");
+});
+onlineChatOverlay.addEventListener("click", function (event) {
+  event.currentTarget.classList.remove("_is-opened");
+  onlineChatButton.classList.remove("_is-active");
+  html.classList.remove("_is-overflow-hidden");
+});
+
 function ourAdvantagesSliderInit() {
   const ourAdvantagesSlider = new Swiper(".js-our-advantages-slider", {
     slidesPerView: "auto",
@@ -134,15 +148,48 @@ function mobilePanel() {
   buttonBurger.addEventListener("click", function () {
     this.classList.toggle("_is-active");
     mobileMenu.classList.toggle("_is-show");
-    html.classList.toggle("_is-show-mobile-menu");
+    html.classList.toggle("_is-overflow-hidden");
   });
   mobileMenu.addEventListener("click", function () {
     buttonBurger.classList.remove("_is-active");
     mobileMenu.classList.remove("_is-show");
-    html.classList.remove("_is-show-mobile-menu");
+    html.classList.remove("_is-overflow-hidden");
   });
 }
 
 if (document.querySelectorAll(".js-button-burger").length) {
   mobilePanel();
 }
+
+function fixedPanel() {
+  const headerTopPanel = document.querySelector(".js-header-top-panel");
+  const topPanel = document.querySelector(".top-panel");
+  const topPanelOffsetTop = topPanel.offsetTop;
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > topPanelOffsetTop) {
+      headerTopPanel.classList.add("_is-fixed");
+    } else {
+      headerTopPanel.classList.remove("_is-fixed");
+      headerTopPanel.style.top = 0;
+    }
+
+    let oldScroll = this.oldScroll || 0;
+    let newScroll = this.scrollY;
+
+    if (newScroll < oldScroll) {
+      headerTopPanel.style.top = 0;
+    }
+
+    this.oldScroll = newScroll;
+
+    if (newScroll >= oldScroll) {
+      headerTopPanel.style.top = "".concat(-topPanelOffsetTop, "px");
+    }
+
+    if (newScroll == 0) {
+      headerTopPanel.classList.remove("_is-fixed");
+    }
+  });
+}
+
+fixedPanel();

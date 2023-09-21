@@ -1,14 +1,38 @@
 .header
   width 100%
-  position absolute
+  position fixed
   top 0
   left 0
   flex none
   z-index 10
+  transition: top .3s, ease .3s
+
+  &._is-fixed
+    position fixed
+    top 0
+    left 0
+
+    .header
+      &__top-line
+        background-color: #53bcf0
+      
+    .top-panel
+      padding-top 15px
+      padding-bottom 15px
+      background-image: linear-gradient(-59deg, #53bcf0 0%, #398bcb 100%)
+      box-shadow: 0px 15px 20px 0px rgba(53,93,171,0.55)
+
+      @media (max-width: 1279px)
+        top 0 !important
 
   &__top-line
+    width 100%
     background-color: rgba(255, 255, 255, 0.17)
     display none
+    transition: background-color .3s, ease .3s
     
     @media (min-width: 1280px)
       display block
+    
+    
+      

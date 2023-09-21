@@ -32,7 +32,7 @@
 
 		
 			<div class="app__header">
-				<header class="header">
+				<header class="header js-header-top-panel">
   <div class="header__content">
     <div class="header__top-line">
       <div class="header__menu container">
@@ -124,7 +124,7 @@
     <div class="hero__inner">
       <div class="hero__content">
         <h1>
-          УПРАВЛЕНИЕ
+          УПРАВЛЕНИЕ <br>
           СТОМАТОЛОГИЕЙ
         </h1>
         <div class="hero__desc">
@@ -237,9 +237,23 @@
     </div>
   </div>
 </div><!-- services-block -->
-      <a href="#" class="hero__online-chat">
-        <img src="img/online-chat-icon.svg" alt="">
-      </a>
+      <div class="online-chat-overlay"></div>
+      <div class="online-chat js-online-chat">
+        <div class="online-chat__social-links">
+          <a href="#" class="online-chat__social-link">
+            <img src="img/social-link-icon.png" alt="">
+          </a>
+          <a href="#" class="online-chat__social-link">
+            <img src="img/social-link-icon2.png" alt="">
+          </a>
+          <a href="#" class="online-chat__social-link">
+            <img src="img/social-link-icon3.png" alt="">
+          </a>
+        </div>
+        <i>
+          <img src="img/online-chat-icon.svg" alt="">
+        </i>
+      </div>
     </div>
   </div>
   <div class="hero__pic">
@@ -347,7 +361,11 @@
             </i>
             <div class="for-whom__name">Координаторам</div>
           </div>
-          <div class="for-whom__circle"></div>
+          <div class="for-whom__circle">
+            <div class="for-whom__pic-tooth">
+              <img src="img/tooth.svg" alt="">
+            </div>
+          </div>
         </div>
       </div>
     </div><!-- for-whom -->
@@ -578,11 +596,15 @@
       <div class="features__bottom">
         <strong>Заказать демонстрацию возможностей</strong>
         <a class="features__button-get button-default button-default--fill" href="#">
-          Получить бесплатно
+          <span>Получить бесплатно</span>
         </a>
       </div>
     </div>
-    <div class="features__circle"></div>
+    <div class="features__circle">
+      <div class="features__pic-tooth">
+        <img src="img/tooth.svg" alt="">
+      </div>
+    </div>
   </div>
 </div><!-- features -->
 
@@ -680,7 +702,7 @@
     <div class="our-advantages__bottom">
       <strong>Сделаем всё за вас — в любой точке России</strong>
       <a class="our-advantages__button-work button-default button-default--fill" href="#">
-        Запуск работы
+        <span>Запуск работы</span>
       </a>
     </div>
     <div class="our-advantages__circle"></div>
@@ -869,7 +891,7 @@
           <div class="tariffs__name">DentalPRO Lite</div>
           <div class="tariffs__price">от 7990 ₽ в мес</div>
           <a class="tariffs__button-try button-default button-default--fill" href="#">
-            Попробовать бесплатно
+            <span>Попробовать бесплатно</span>
           </a>
         </div>
       </div>
@@ -881,7 +903,7 @@
           <div class="tariffs__name">DentalPRO Cloud</div>
           <div class="tariffs__price">от 8780 ₽ в мес</div>
           <a class="tariffs__button-try button-default button-default--fill" href="#">
-            Попробовать бесплатно
+            <span>Попробовать бесплатно</span>
           </a>
         </div>
       </div>
@@ -893,14 +915,14 @@
           <div class="tariffs__name">DentalPRO Server</div>
           <div class="tariffs__price">от 8780 ₽ в мес</div>
           <a class="tariffs__button-try button-default button-default--fill" href="#">
-            Попробовать бесплатно
+            <span>Попробовать бесплатно</span>
           </a>
         </div>
       </div>
     </div>
     <div class="tariffs__bottom">
       <a class="tariffs__button-compares button-default" href="#">
-        Сравнить тарифы
+        <span>Сравнить тарифы</span>
       </a>
     </div>
   </div>
